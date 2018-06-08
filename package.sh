@@ -23,11 +23,11 @@ cp README.md  $PACKAGE/usr/share/doc/create_ap/
 
 cat > $PACKAGE/DEBIAN/control << EOL
 Section: main
-Package: furhat-create-ap
-Version: 1.0.0
+Package: $NAME
+Version: $VERSION
 Depends: util-linux, procps, hostapd, iproute2, iw
 Maintainer: Filip de Figueiredo <fil@furhatrobotics.com>
-Architecture: amd64
+Architecture: $ARCH
 Description: Forked package of create_ap, a service for hosting networks. Create_ap allows the machine to host a network while being connected to one.
 EOL
 
